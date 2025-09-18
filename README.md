@@ -16,7 +16,7 @@ A pixel-perfect AI creative platform interface built with Next.js and TypeScript
 
 1. **Clone the repository**
 ```bash
-git clone [repository-url]
+git clone https://github.com/daavhidd/cartolinks.git
 cd cartolinks
 ```
 
