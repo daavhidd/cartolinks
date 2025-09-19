@@ -126,30 +126,30 @@ const Header = ({ theme, toggleTheme }: HeaderProps) => {
 
                     <div className="lg:hidden flex items-center justify-between w-full">
                         <div className="flex items-center space-x-2">
-                            <FaLayerGroup className="size-5 text-gray-700 dark:text-gray-300" />
-                            <div className="size-6 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
+                            <FaLayerGroup className="size-8 text-gray-700 dark:text-gray-300" />
+                            <div className="size-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
                         </div>
 
                         <div className="flex items-center space-x-2">
                             <button
                                 onClick={toggleTheme}
-                                className="p-1.5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-all duration-200"
+                                className="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-all duration-200"
                             >
                                 {theme === "light" ? (
-                                    <IoMoonSharp className="size-4 text-gray-600 dark:text-gray-400" />
+                                    <IoMoonSharp className="size-8 text-gray-600 dark:text-gray-400" />
                                 ) : (
-                                    <IoSunnySharp className="size-4 text-yellow-500" />
+                                    <IoSunnySharp className="size-8 text-yellow-500" />
                                 )}
                             </button>
                             
                             <button
                                 onClick={toggleMobileMenu}
-                                className="p-1.5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-all duration-200"
+                                className="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-all duration-200"
                             >
                                 {mobileMenuOpen ? (
-                                    <FaTimes className="size-5 text-gray-700 dark:text-gray-300" />
+                                    <FaTimes className="size-8 text-gray-700 dark:text-gray-300" />
                                 ) : (
-                                    <FaBars className="size-5 text-gray-700 dark:text-gray-300" />
+                                    <FaBars className="size-8 text-gray-700 dark:text-gray-300" />
                                 )}
                             </button>
                         </div>
@@ -160,7 +160,7 @@ const Header = ({ theme, toggleTheme }: HeaderProps) => {
             <div className={`lg:hidden fixed top-20 left-0 right-0 bottom-0 bg-white dark:bg-black transition-transform duration-300 ease-in-out z-40 ${
                 mobileMenuOpen ? 'translate-y-0' : '-translate-y-full' }`}
             >
-                <div className="p-4 space-y-3 h-full overflow-y-auto">
+                <div className="p-4 space-y-3 min-h-[100vh] overflow-y-auto">
                 
                     <div className="relative">
                         <button
